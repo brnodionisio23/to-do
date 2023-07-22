@@ -14,18 +14,23 @@
 
 <body>
     <aside>
+        <h1>Cadernos</h1>
         <div class="toolbar">
-            <div id="search">
-                <form>
-                    <input type="text" placeholder="Pesquisar">
+            <div >
+                <form id="search">
+                    <input type="text" id="search-input" placeholder="Pesquisar">
                 </form>
+                <hr>
                 <div id="filter">
-                    <h4>Filtrar</h4>
+                    <!-- <h4>Filtrar</h4>
                     <select id="filter-select">
                         <option value="all">Todos</option>
                         <option value="done">Feitos</option>
                         <option value="todo">A fazer</option>
-                    </select>
+                    </select> -->
+                    <button class="filter">Todos</button>
+                    <button class="filter">Pendentes</button>
+                    <button class="filter">Concluidos</button>
                 </div>
             </div>
         </div>
@@ -33,7 +38,7 @@
     <main>
         <h1>Tarefas</h1>
         <form id="todo-form">
-            <p>Adicione a sua tarefa</p>
+            <!-- <p>Adicione a sua tarefa</p> -->
             <div class="form-control">
                 <input type="text" id="todo-input" placeholder="O que você vai fazer?">
                 <button type="submit">
